@@ -1,0 +1,52 @@
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display:grid;
+    grid-template-columns: 150px 1fr 1fr 1fr 1fr;
+    text-align: center;
+    line-height:10vh;
+    background-color: #222222;
+}
+.logoimg{
+    display: block; margin: 0px auto;
+    height: 10vh;
+}
+.navli{
+    border-left: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navli:hover{
+    font-size:27.5px;
+}
+.main {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main::after {
+    width: 100%;
+    height: 90vh;
+    content: "";
+    background: url("Genshin mainpage.jpg");
+    background-size:  100% 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+.main_writing{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
