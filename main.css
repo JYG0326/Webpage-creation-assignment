@@ -1,7 +1,20 @@
 body, h1, p{
     margin: 0;
     padding: 0;
+    font-family:'나눔고딕';
 }
+h1,p{
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
+    color: #222222;
+}
+h1{
+    font-size: 45px;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .nav{
     display:grid;
     grid-template-columns: 150px 1fr 1fr 1fr 1fr;
@@ -22,6 +35,10 @@ body, h1, p{
 }
 .navli:hover{
     font-size:27.5px;
+    background-image: url("charPreview_Venti.png");
+    background-size: auto 75px;
+    background-repeat:no-repeat;
+    background-position: right;
 }
 .main {
     width: 100%;
@@ -29,6 +46,7 @@ body, h1, p{
     text-align: center;
     position: relative;
     z-index: 1;
+    line-height:2
 }
 
 .main::after {
@@ -36,6 +54,7 @@ body, h1, p{
     height: 90vh;
     content: "";
     background: url("Genshin mainpage.jpg");
+    background-repeat:no-repeat;
     background-size:  100% 90vh;
     position: absolute;
     top: 0;
