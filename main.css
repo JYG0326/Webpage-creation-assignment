@@ -1,9 +1,13 @@
+/*전역 태그 설정*/
 body, h1, p, ul, li, a{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
     font-family:'나눔고딕';
+}
+body{
+    overflow: hidden;
 }
 h1,p{
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
@@ -19,50 +23,55 @@ p{
 a{
     color: white;
 }
+
+/*상단 메뉴바 설정*/
+.logoimg{
+    display: block; margin: 0px auto;
+    height: 10vh;
+    background-color: #222222;
+}
 .nav{
     display:grid;
     grid-template-columns: 150px 1fr 1fr 1fr 1fr;
     text-align: center;
     line-height:10vh;
-    background-color: #222222;
 }
-.nav::after{
-    width: 100%;
-    height: 90vh;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.logoimg{
-    display: block; margin: 0px auto;
-    height: 10vh;
-}
-.navli{
+.main_menu{
     border-left: 1px solid white;
     font-size: 25px;
     font-weight: bold;
+    background-color: #222222;
 }
-.navli:hover{
+
+/*상단 메뉴바 아이콘 출력*/
+ul.nav > li:hover > div.main_menu{
     font-size:30px;
     background-size: auto 75px;
     background-repeat:no-repeat;
     background-position: right;
 }
-.li_cha:hover{
+ul.nav > li.menu_c:hover > div.menu3{
     background-image: url("charPreview_Venti.png");
 }
-.li_inf:hover{
+ul.nav > li.menu_d:hover > div.menu4{
     background-image: url("icon_mora.png");
     background-size: auto 100px;
 }
-.li_genshin:hover{
+ul.nav > li.menu_e:hover > div.menu5{
     background-image: url("icon_Adventurers.png");
 }
+
+/*드롭다운 출력*/
+ul.nav > li ul.sub_menu { display:none; }
+ul.nav > li:hover ul.sub_menu { display:block; }
+ul.nav > li ul.sub_menu > li:hover { background:#222222; }
+
+
+
+/*메인페이지 설정*/
 .main {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -71,7 +80,7 @@ a{
 
 .main::after {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     content: "";
     background: url("Genshin mainpage.jpg");
     background-repeat:no-repeat;
