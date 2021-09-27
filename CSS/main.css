@@ -60,6 +60,10 @@ ul.nav > li.menu_d:hover > div.menu4{
 ul.nav > li.menu_e:hover > div.menu5{
     background-image: url("../Image/icon_Adventurers.png");
 }
+li{
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /*드롭다운 출력*/
 ul.nav > li ul.sub_menu { display:none; }
