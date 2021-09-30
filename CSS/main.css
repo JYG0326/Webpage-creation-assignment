@@ -1,4 +1,7 @@
 /*전역 태그 설정*/
+*{
+
+}
 body, h1, p, ul, li, a{
     margin: 0;
     padding: 0;
@@ -8,10 +11,6 @@ body, h1, p, ul, li, a{
 }
 body{
 
-}
-h1,p{
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
-    color: #222222;
 }
 h1{
     font-size: 45px;
@@ -110,15 +109,25 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
+    color: #222222;
 }
 
 /*Character*/
 .character_icon{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10%, auto));
+    row-gap: 10px;
     justify-items: center;
 }
 .c_icon{
     width:100px;
     height: 100px;
+}
+.namecard{
+    border:2px solid;
+    border-radius: 5px;
+}
+.namecard > a> p{
+    background-color: black;
 }
