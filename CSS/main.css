@@ -136,3 +136,23 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 .namecard > a> p{
     background-color: black;
 }
+
+.weapon_icon{
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+}
+.type4{
+    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+}
+.type5{
+    grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+}
+.type6{
+    grid-template-columns: repeat(auto-fill, minmax(16.66666666666667%, auto));
+}
+
+.w_icon{
+    width:175px;
+    height:175px;
+}
