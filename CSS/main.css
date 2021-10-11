@@ -1,16 +1,10 @@
-/*전역 태그 설정*/
-*{
-
-}
+/*--------------------------------------------------전역 태그 설정--------------------------------------------------*/
 body, h1, p, ul, li, a{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
     font-family:'나눔고딕';
-}
-body{
-
 }
 h1{
     font-size: 45px;
@@ -23,7 +17,7 @@ a{
     color: white;
 }
 
-/*상단 메뉴바 설정*/
+/*--------------------------------------------------상단 메뉴바 설정--------------------------------------------------*/
 .logoimg{
     display: block; margin: 0px auto;
     height: 10vh;
@@ -49,6 +43,10 @@ a{
     color: white;
     background-color: rgb(50, 50, 50);
 }
+li{
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /*상단 메뉴바 아이콘 출력*/
 ul.nav > li:hover > div.main_menu{
@@ -67,10 +65,7 @@ ul.nav > li.menu_d:hover > div.menu4{
 ul.nav > li.menu_e:hover > div.menu5{
     background-image: url("../Image/icon_Adventurers.png");
 }
-li{
-    font-size: 25px;
-    font-weight: bold;
-}
+
 
 /*드롭다운 출력*/
 ul.nav > li ul.sub_menu { display:none; }
@@ -107,7 +102,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 
 
 
-/*HOME*/
+/*--------------------------------------------------HOME--------------------------------------------------*/
 .main_writing{
     position:absolute;
     width: 80%;
@@ -118,7 +113,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     color: #222222;
 }
 
-/*Character*/
+/*--------------------------------------------------Character--------------------------------------------------*/
 .character_icon{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10%, auto));
@@ -128,6 +123,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 .c_icon{
     width:100px;
     height: 100px;
+    vertical-align: bottom;
 }
 .namecard{
     border:2px solid;
@@ -137,6 +133,72 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     background-color: black;
 }
 
+/*플레이어 리스트*/
+.bg_player> h2{
+    background-color: #222222;
+    color: white;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.bg_player{
+    height: 35vh;
+    background-color: #222222;
+    background-image: url("../Image/icon_traverconstellation.png"), url("../Image/space-stars-sky-night-astronomy.jpg");
+    background-repeat: no-repeat;
+    background-size: 220px auto, 100% auto;
+    background-position: center;
+    z-index: 1;
+}
+/*몬드 리스트*/
+.bg_md> h2{
+    background-color: #222222;
+    color: white;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.bg_md{
+    height:55vh;
+    background-color: rgb(0, 191, 165, 0.6);
+    background-image: url("../Image/icon_MD.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    z-index: 1;
+}
+/*리월 리스트*/
+.bg_ly> h2{
+    background-color: #222222;
+    color: white;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.bg_ly{
+    height: 55vh;
+    background-color: rgb(219, 168, 1, 0.7);
+    background-image: url("../Image/icon_LY.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    z-index: 1;
+}
+/*이나즈마 리스트*/
+.bg_iz> h2{
+    background-color: #222222;
+    color: white;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.bg_iz{
+    height:35vh;
+    background-color: rgb(138, 62, 171, 0.7);
+    background-image: url("../Image/icon_IZ.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    z-index: 1;
+}
+
+/*--------------------------------------------------Weapon--------------------------------------------------*/
 .weapon_icon{
     display: grid;
     row-gap: 10px;
@@ -151,8 +213,12 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 .type6{
     grid-template-columns: repeat(auto-fill, minmax(16.66666666666667%, auto));
 }
-
 .w_icon{
     width:175px;
     height:175px;
+    vertical-align: bottom;
+}
+
+.weapon_main > div > h2 {
+    font-size: 30px;
 }
