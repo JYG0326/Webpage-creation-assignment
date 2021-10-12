@@ -1,4 +1,4 @@
-/*--------------------------------------------------전역 태그 설정--------------------------------------------------*/
+/*--------------------------------------------------태그 초기화작업--------------------------------------------------*/
 body, h1, p, ul, li, a{
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 
 
 
-/*메인페이지 설정*/
+/*--------------------------------------------------메인 레이아웃 설정--------------------------------------------------*/
 .main {
     width: 100%;
     height: 90vh;
@@ -94,14 +94,6 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     opacity: 0.8;
 }
 
-.home::after{
-    background: url("../Image/Genshin\ mainpage.jpg");
-    background-repeat:no-repeat;
-    background-size:  100% 100vh;
-}
-
-
-
 /*--------------------------------------------------HOME--------------------------------------------------*/
 .main_writing{
     position:absolute;
@@ -111,6 +103,11 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     transform: translate(-50%, -50%);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
     color: #222222;
+}
+.home::after{
+    background: url("../Image/Genshin\ mainpage.jpg");
+    background-repeat:no-repeat;
+    background-size:  100% 100vh;
 }
 
 /*--------------------------------------------------Character--------------------------------------------------*/
