@@ -94,6 +94,12 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     opacity: 0.8;
 }
 
+.wich{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
 /*--------------------------------------------------HOME--------------------------------------------------*/
 .main_writing{
     position:absolute;
