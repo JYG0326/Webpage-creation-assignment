@@ -1,3 +1,4 @@
+/*
 window.addEventListener("wheel", function(e){
 	e.preventDefault();
 },{passive : false});
@@ -30,3 +31,4 @@ $(window).on("wheel", function(e){
 	$html.animate({scrollTop : posTop});
  
 });
+*/
