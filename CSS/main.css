@@ -97,7 +97,6 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 .wich{
     height: 100vh;
     text-align: center;
-    position: relative;
 }
 
 /*--------------------------------------------------HOME--------------------------------------------------*/
