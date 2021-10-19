@@ -17,6 +17,7 @@ a{
     color: white;
 }
 
+
 /*--------------------------------------------------상단 메뉴바 설정--------------------------------------------------*/
 .logoimg{
     display: block; margin: 0px auto;
@@ -116,96 +117,89 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 }
 
 /*--------------------------------------------------Character--------------------------------------------------*/
-.character_icon{
+/*객체 테두리 적용*/
+.namecard{
+    border:2px solid;
+    border-radius: 5px;
+}
+/*객체 텍스트 배경 조정*/
+.namecard > a> p{
+    background-color: black;
+}
+/*그리드 지정*/
+.item_character{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10%, auto));
     row-gap: 10px;
     justify-items: center;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
+/*이미지 크기 조정*/
 .c_icon{
     width:90px;
     height: 90px;
     vertical-align: bottom;
 }
-.namecard{
-    border:2px solid;
-    border-radius: 5px;
-}
-.namecard > a> p{
-    background-color: black;
+.character_icon > .namecard {
+    width:110px;
 }
 
-/*플레이어 리스트*/
-.bg_player> h2{
+/*지역 이름 설정*/
+.bg> h2{
     background-color: #222222;
     color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     margin: 0px;
-    margin-bottom: 25px;
 }
-.bg_player{
-    height: 35vh;
+/*플레이어 리스트*/
+.bg_PY{
     background-color: #222222;
     background-image: url("../Image/icon_traverconstellation.png"), url("../Image/space-stars-sky-night-astronomy.jpg");
     background-repeat: no-repeat;
     background-size: 220px auto, 100% auto;
     background-position: center;
-    z-index: 1;
 }
 /*몬드 리스트*/
-.bg_md> h2{
-    background-color: #222222;
-    color: white;
-    margin: 0px;
-    margin-bottom: 25px;
-}
-.bg_md{
-    height:55vh;
+.bg_MD{
     background-color: rgb(0, 191, 165, 0.6);
     background-image: url("../Image/icon_MD.png");
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
-    z-index: 1;
 }
 /*리월 리스트*/
-.bg_ly> h2{
-    background-color: #222222;
-    color: white;
-    margin: 0px;
-    margin-bottom: 25px;
-}
-.bg_ly{
-    height: 55vh;
+.bg_LY{
     background-color: rgb(219, 168, 1, 0.7);
     background-image: url("../Image/icon_LY.png");
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
-    z-index: 1;
 }
 /*이나즈마 리스트*/
-.bg_iz> h2{
-    background-color: #222222;
-    color: white;
-    margin: 0px;
-    margin-bottom: 25px;
-}
-.bg_iz{
-    height:35vh;
+.bg_IZ{
     background-color: rgb(138, 62, 171, 0.7);
     background-image: url("../Image/icon_IZ.png");
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
-    z-index: 1;
 }
 
 /*--------------------------------------------------Weapon--------------------------------------------------*/
+/*그리드 지정*/
 .weapon_icon{
     display: grid;
     row-gap: 10px;
     justify-items: center;
 }
+/*무기 분류 글자 크기 조정*/
+.weapon_main > div > h2 {
+    font-size: 30px;
+}
+/*타입에 따른 칼럼 개수 조정*/
 .type4{
     grid-template-columns: repeat(auto-fill, minmax(25%, auto));
 }
@@ -215,31 +209,34 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 .type6{
     grid-template-columns: repeat(auto-fill, minmax(16.66666666666667%, auto));
 }
+/*아이콘(사진) 크기 조정*/
 .w_icon{
-    width:150px;
-    height:150px;
-    font-size: 15px;
+    width:140px;
+    height:140px;
+    font-size: 12.5px;
     vertical-align: bottom;
 }
-
-.weapon_main > div > h2 {
-    font-size: 30px;
+/*객체 크기 조정*/
+.weapon_icon > .namecard {
+    width:200px;
 }
 
+
+
 /*--------------------------------------------------Artifact--------------------------------------------------*/
+/*그리드 지정*/
 .artifact_icon{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20%, auto));
     row-gap: 10px;
     justify-items: center;
 }
-
+/*아이콘(사진) 크기 조정*/
 .a_icon{
     width:120px;
     height:120px;
 }
-
+/*객체 크기 조정*/
 .artifact_icon > .namecard{
     width:250px;
-    font-size: 5px;
 }
