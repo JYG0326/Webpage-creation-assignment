@@ -123,8 +123,8 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     justify-items: center;
 }
 .c_icon{
-    width:100px;
-    height: 100px;
+    width:90px;
+    height: 90px;
     vertical-align: bottom;
 }
 .namecard{
@@ -216,11 +216,30 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     grid-template-columns: repeat(auto-fill, minmax(16.66666666666667%, auto));
 }
 .w_icon{
-    width:175px;
-    height:175px;
+    width:150px;
+    height:150px;
+    font-size: 15px;
     vertical-align: bottom;
 }
 
 .weapon_main > div > h2 {
     font-size: 30px;
+}
+
+/*--------------------------------------------------Artifact--------------------------------------------------*/
+.artifact_icon{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.a_icon{
+    width:120px;
+    height:120px;
+}
+
+.artifact_icon > .namecard{
+    width:250px;
+    font-size: 5px;
 }
