@@ -6,37 +6,38 @@ body, h1, p, ul, li, a{
     list-style-type: none;
     font-family:'나눔고딕';
 }
-h1{
-    font-size: 45px;
-}
-p{
-    font-weight: bold;
-    font-size: 20px;
-}
+
 a{
     color: white;
 }
 
 
 /*--------------------------------------------------상단 메뉴바 설정--------------------------------------------------*/
+/*로고 이미지 크기*/
 .logoimg{
     display: block; margin: 0px auto;
-    height: 10vh;
+    height: 9.5vh;
     background-color: #222222;
 }
+
+/*네비게이션바 영역 분할*/
 .nav{
     display:grid;
     grid-template-columns: 150px 1fr 1fr 1fr 1fr;
     text-align: center;
-    line-height:10vh;
+    line-height:9.5vh;
     opacity: 0.9;
 }
+
+/*메인(보임) 메뉴*/
 .main_menu{
     border-left: 1px solid white;
-    font-size: 25px;
+    font-size: 22.5px;
     font-weight: bold;
     background-color: #222222;
 }
+
+/*드롭다운(안보임) 메뉴*/
 .sub_menu{
     position:absolute;
     width:calc( 25% - 37.5px );
@@ -44,36 +45,37 @@ a{
     color: white;
     background-color: rgb(50, 50, 50);
 }
-li{
-    font-size: 25px;
+.sub_menu > li{
+    font-size: 22.5px;
     font-weight: bold;
+}
+.sub_menu > li:hover a{
+    font-size: 25px;
 }
 
 /*상단 메뉴바 아이콘 출력*/
-ul.nav > li:hover > div.main_menu{
-    font-size:30px;
+ul.nav > li:hover > .main_menu{
+    font-size:27.5px;
     background-size: auto 75px;
     background-repeat:no-repeat;
     background-position: right;
 }
-ul.nav > li.menu_c:hover > div.menu3{
+.menu_c:hover > div.menu3{
     background-image: url("../Image/charPreview_Venti.png");
 }
-ul.nav > li.menu_d:hover > div.menu4{
+.menu_d:hover > div.menu4{
     background-image: url("../Image/icon_mora.png");
     background-size: auto 100px;
 }
-ul.nav > li.menu_e:hover > div.menu5{
+.menu_e:hover > div.menu5{
     background-image: url("../Image/icon_Adventurers.png");
 }
 
 
 /*드롭다운 출력*/
-ul.nav > li ul.sub_menu { display:none; }
-ul.nav > li:hover ul.sub_menu { display:block; }
-ul.nav > li ul.sub_menu > li:hover { background:#222222; }
-
-
+.nav > li .sub_menu { display:none; }
+.nav > li:hover .sub_menu { display:block; }
+.nav > li .sub_menu > li:hover { background:#222222; }
 
 /*--------------------------------------------------메인 레이아웃 설정--------------------------------------------------*/
 .main {
@@ -81,7 +83,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     height: 90vh;
     text-align: center;
     z-index: 1;
-    line-height:2
+    line-height:2;
 }
 
 .main::after {
@@ -101,6 +103,7 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 }
 
 /*--------------------------------------------------HOME--------------------------------------------------*/
+/*타이틀 폰트 효과 & 크기 조정*/
 .main_writing{
     position:absolute;
     width: 80%;
@@ -110,6 +113,15 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255);
     color: #222222;
 }
+.main_writing > h1{
+    font-size: 37.5px;
+}
+.main_writing > p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*배경 이미지 설정*/
 .home::after{
     background: url("../Image/Genshin\ mainpage.jpg");
     background-repeat:no-repeat;
@@ -125,6 +137,13 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 /*객체 텍스트 배경 조정*/
 .namecard > a> p{
     background-color: black;
+}
+/*리스트 크기 조정*/
+.bg{
+    width:92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top:3%;
 }
 /*그리드 지정*/
 .item_character{
@@ -145,6 +164,11 @@ ul.nav > li ul.sub_menu > li:hover { background:#222222; }
 }
 .character_icon > .namecard {
     width:110px;
+}
+/*객체별 폰트 크기 조정*/
+.namecard > a > p{
+    font-size: 17.5px;
+    font-weight: bold;
 }
 
 /*지역 이름 설정*/
