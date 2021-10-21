@@ -274,8 +274,10 @@ ul.nav > li:hover > .main_menu{
 .artifact_icon{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20%, auto));
-    row-gap: 10px;
+    row-gap: 5vh;
     justify-items: center;
+    padding-top:5vh;
+    padding-bottom: 5vh;
 }
 /*아이콘(사진) 크기 조정*/
 .a_icon{
@@ -284,5 +286,77 @@ ul.nav > li:hover > .main_menu{
 }
 /*객체 크기 조정*/
 .artifact_icon > .namecard{
-    width:250px;
+    width:225px;
+}
+.a_1{
+    background-image: url("../Image/a1.png");
+    background-size: 230px 170px;
+}
+.a_2{
+    background-image: url("../Image/a2.png");
+    background-size: 230px 170px;
+}
+.a_3{
+    background-image: url("../Image/a3.png");
+    background-size: 230px 170px;
+}
+.a_4{
+    background-image: url("../Image/a4.png");
+    background-size: 230px 170px;
+}
+.a_5{
+    background-image: url("../Image/a5.png");
+    background-size: 230px 170px;
+}
+.a_6{
+    background-image: url("../Image/a6.png");
+    background-size: 230px 170px;
+}
+.a_7{
+    background-image: url("../Image/a7.png");
+    background-size: 230px 170px;
+}
+.a_8{
+    background-image: url("../Image/a8.png");
+    background-size: 230px 170px;
+}
+.a_9{
+    background-image: url("../Image/a9.png");
+    background-size: 230px 170px;
+}
+.a_10{
+    background-image: url("../Image/a10.png");
+    background-size: 230px 170px;
+}
+.a_11{
+    background-image: url("../Image/a11.png");
+    background-size: 230px 170px;
+}
+.a_12{
+    background-image: url("../Image/a12.png");
+    background-size: 230px 170px;
+}
+.a_13{
+    background-image: url("../Image/a13.png");
+    background-size: 230px 170px;
+}
+.a_14{
+    background-image: url("../Image/a14.png");
+    background-size: 230px 170px;
+}
+.a_15{
+    background-image: url("../Image/a15.png");
+    background-size: 230px 170px;
+}
+.a_16{
+    background-image: url("../Image/a16.png");
+    background-size: 230px 170px;
+}
+.a_17{
+    background-image: url("../Image/a17.png");
+    background-size: 230px 170px;
+}
+.a_18{
+    background-image: url("../Image/a18.png");
+    background-size: 230px 170px;
 }
