@@ -1,4 +1,5 @@
 /*--------------------------------------------------태그 초기화작업--------------------------------------------------*/
+
 body, h1, p, ul, li, a{
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ a{
 
 
 /*--------------------------------------------------상단 메뉴바 설정--------------------------------------------------*/
+
 /*로고 이미지 크기*/
 .logoimg{
     display: block; margin: 0px auto;
@@ -78,6 +80,7 @@ ul.nav > li:hover > .main_menu{
 .nav > li .sub_menu > li:hover { background:#222222; }
 
 /*--------------------------------------------------메인 레이아웃 설정--------------------------------------------------*/
+
 .main {
     width: 100%;
     height: 90vh;
@@ -103,6 +106,7 @@ ul.nav > li:hover > .main_menu{
 }
 
 /*--------------------------------------------------HOME--------------------------------------------------*/
+
 /*타이틀 폰트 효과 & 크기 조정*/
 .main_writing{
     position:absolute;
@@ -129,15 +133,22 @@ ul.nav > li:hover > .main_menu{
 }
 
 /*--------------------------------------------------Character--------------------------------------------------*/
-/*객체 테두리 적용*/
+
+/*객체별 테두리 적용*/
 .namecard{
     border:2px solid;
     border-radius: 5px;
 }
-/*객체 텍스트 배경 조정*/
+/*객체별 텍스트 배경 조정*/
 .namecard > a> p{
     background-color: black;
 }
+/*객체별 텍스트 크기 조정*/
+.namecard > a > p{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
 /*리스트 크기 조정*/
 .bg{
     width:92%;
@@ -145,6 +156,7 @@ ul.nav > li:hover > .main_menu{
     padding-right: 4%;
     padding-top:3%;
 }
+
 /*그리드 지정*/
 .item_character{
     display: grid;
@@ -155,23 +167,12 @@ ul.nav > li:hover > .main_menu{
     padding-bottom: 5vh;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-}
-/*이미지 크기 조정*/
-.c_icon{
-    width:90px;
-    height: 90px;
-    vertical-align: bottom;
-}
-.character_icon > .namecard {
-    width:110px;
-}
-/*객체별 폰트 크기 조정*/
-.namecard > a > p{
-    font-size: 17.5px;
-    font-weight: bold;
+    border:4px #222222 solid;
 }
 
-/*지역 이름 설정*/
+
+
+/*분류제목 텍스트 설정*/
 .bg> h2{
     background-color: #222222;
     color: white;
@@ -212,17 +213,30 @@ ul.nav > li:hover > .main_menu{
     background-position: center;
 }
 
+/*이미지 크기 조정*/
+.c_icon{
+    width:90px;
+    height: 90px;
+    vertical-align: bottom;
+}
+.character_icon > .namecard {
+    width:110px;
+}
+
 /*--------------------------------------------------Weapon--------------------------------------------------*/
+
 /*그리드 지정*/
-.weapon_icon{
+.item_weapon{
     display: grid;
     row-gap: 10px;
     justify-items: center;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border:4px #222222 solid;
 }
-/*무기 분류 글자 크기 조정*/
-.weapon_main > div > h2 {
-    font-size: 30px;
-}
+
 /*타입에 따른 칼럼 개수 조정*/
 .type4{
     grid-template-columns: repeat(auto-fill, minmax(25%, auto));
@@ -233,6 +247,13 @@ ul.nav > li:hover > .main_menu{
 .type6{
     grid-template-columns: repeat(auto-fill, minmax(16.66666666666667%, auto));
 }
+
+/*무기 분류 글자 크기 조정*/
+.weapon_main > div > h2 {
+    font-size: 27.5px;
+    margin: 0px;
+}
+
 /*아이콘(사진) 크기 조정*/
 .w_icon{
     width:140px;
@@ -240,6 +261,7 @@ ul.nav > li:hover > .main_menu{
     font-size: 12.5px;
     vertical-align: bottom;
 }
+
 /*객체 크기 조정*/
 .weapon_icon > .namecard {
     width:200px;
