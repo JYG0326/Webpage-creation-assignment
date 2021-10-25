@@ -100,9 +100,60 @@ ul.nav > li:hover > .main_menu{
     opacity: 0.8;
 }
 
-.wich{
-    height: 100vh;
-    text-align: center;
+/*--------------------------------------------------Information--------------------------------------------------*/
+.test{
+    display: grid;
+    grid-column: repeat(3, 1fr);
+}
+.inf_tb > h1{
+    font-size: 30px;
+    color:#333333;
+}
+.inf_md > h1{
+    font-size: 30px;
+    color:rgb(0, 191, 165);
+}
+.inf_ly > h1{
+    font-size: 30px;
+    color:rgb(219, 168, 1);
+}
+.inf_iz > h1{
+    font-size: 30px;
+    color:rgb(138, 62, 171);
+}
+.test > div > p{
+    color: azure;
+    font-weight: bold;
+}
+.inf_tb{
+    grid-column: 1/4;
+    grid-row:1/2;
+    height: 30vh;
+    padding-top:7.5vh;
+    padding-bottom: 7.5vh;
+    background-image: url('../Image/test.png');
+    background-size: cover;
+}
+.inf_md{
+    background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20200320/2020032014424278079.jpg');
+    background-size: cover;
+    height: 30vh;
+    padding-top:7.5vh;
+    padding-bottom: 7.5vh;
+}
+.inf_ly{
+    background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20200320/2020032014544585038.jpg');
+    background-size: cover;
+    height: 30vh;
+    padding-top:7.5vh;
+    padding-bottom: 7.5vh;
+}
+.inf_iz{
+    background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20210719/2021071920251756690.jpg');
+    background-size: cover;
+    height: 30vh;
+    padding-top:7.5vh;
+    padding-bottom: 7.5vh;
 }
 
 /*--------------------------------------------------HOME--------------------------------------------------*/
